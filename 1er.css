@@ -564,6 +564,45 @@ form a{
 }
 
 
+.submenu{
+    display: none;
+}
+
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0px;
+    z-index: 1000;
+}
+.submenu li{
+    border-bottom: 1px solid #ccc;
+}
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -573,7 +612,24 @@ form a{
 /*media query for less than 600 screen size*/
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
 
 .row{
     text-align: center;
